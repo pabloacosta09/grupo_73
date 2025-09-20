@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Comparativa: Minecraft vs Otros Juegos para Streaming</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <header>
+    <h1>Comparativa: Minecraft vs Otros Juegos (lo que exige y lo que pide)</h1>
+  </header>
+  <section>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Juego</th>
+        <th>Tipo / Género / Estilo visual</th>
+        <th>Requerimientos generales (mínimos / recomendados)</th>
+        <th>Qué exige más: CPU, GPU, RAM, otros</th>
+        <th>Cómo se comporta al hacer streaming</th>
+      </tr>
+      <tr>
+        <td>Minecraft (Java, sin mods / con shaders / mods ligeros)</td>
+        <td>Sandbox / construcción / voxels; gráficos por defecto simples; la apariencia puede mejorar mucho con mods o shaders</td>
+        <td>
+          Mínimos: CPU modesta, GPU integrada compatible con OpenGL 4.4, alrededor de 2-4 GB RAM. <br>
+          Recomendados: CPU más potente (mejor frecuencia y más núcleos), GPU discreta si usás mejoras gráficas (shaders, texturas de alta resolución), 8-16 GB RAM para mods grandes o mundos grandes. <br>
+          Fuente: requisitos de Minecraft Java Edition. :contentReference[oaicite:0]{index=0}
+        </td>
+        <td>
+          CPU: generación de chunks, entidades, lógica de mods (relojes/redstone, mobs, etc.). <br>
+          RAM: para cargar mundo, mantener entidades, mods; más RAM ayuda mucho si mucho contenido adicional. <br>
+          GPU: lo básico bien con integrada; los shaders o mods gráficos suben mucho demanda. <br>
+          Almacenamiento: SSD recomendada para tiempos de carga y evitar retrasos. <br>
+          Otros: versión de Java, controladores gráficos actualizados, ajustes gráficos (distancia de renderizado, efectos, etc.).
+        </td>
+        <td>
+          Si jugás “vanilla” o con pocos mods, suele poder streamarse bien incluso con hardware medio-bajo, manteniendo 720p o aun 1080p si la codificación es eficiente. <br>
+          Cuando agregás mods pesados o shaders el FPS puede bajar mucho, la carga en CPU y GPU se disparan, puede requerir bajar calidad del juego o del stream. <br>
+          Usar un encoder por GPU (si está disponible, como NVENC) ayuda a liberar la carga del CPU y estabilizar el stream.
+        </td>
+      </tr>
+      <tr>
+        <td>League of Legends</td>
+        <td>MOBA; estética “plana”, no ultra realista; mucha acción en equipo, pero menor carga gráfica comparada con AAA</td>
+        <td>
+          Mínimos: CPU como un Intel Core i3-530 / AMD A6-3650, GPU modesta (por ejemplo GeForce 9600GT, AMD HD 6570, o una integrada decente), RAM 2 GB. <br>
+          Recomendados: algo como Intel Core i5-3300 / Ryzen 3 1200, GPU mejor si querés alta resolución, RAM de 4 GB, almacenamiento SSD mejora mucho la experiencia. <br>
+          Fuente: requisitos oficiales de League of Legends. :contentReference[oaicite:1]{index=1}
+        </td>
+        <td>
+          GPU no necesita ser muy potente para gráficos bajos o medios; CPU importa en teamfights cuando hay muchos efectos/jugadores. <br>
+          RAM modesta; almacenamiento SSD mejora tiempos de carga de mapas. <br>
+          Otros: estabilidad de conexión para multijugador, baja latencia.  
+        </td>
+        <td>
+          Muy buen comportamiento en streaming aun con hardware moderado; al tener menor demanda visual, puedes permitirte mantener FPS decentes + calidad de transmisión aceptable. <br>
+          Es más “predecible” que Minecraft con mods. <br>
+          Para 720p probablemente no necesites grandes sacrificios; para 1080p y valores altos gráficos o muchas resoluciones más altas, necesitas GPU + CPU un poco mejor.
+        </td>
+      </tr>
+      <tr>
+        <td>Valorant</td>
+        <td>FPS competitivo; optimizado para e-sports; efectos moderados, iluminación, etc., pero bien optimizado</td>
+        <td>
+          Mínimos: CPU como Intel Core 2 Duo E8400 / AMD Athlon 200GE; GPU puede ser integrada como Intel HD 4000; RAM 4 GB. <br>
+          Recomendados: CPU como Intel i3-4150 / Ryzen 3 1200; GPU como GeForce GT 730 / Radeon R7 240 para 60 FPS; para high-end a 144+ FPS CPU / GPU más potentes. <br>
+          Fuente: requisitos oficiales de Valorant. :contentReference[oaicite:2]{index=2}
+        </td>
+        <td>
+          GPU importante si querés buenos FPS, especialmente cuando hay muchos efectos, partículas; CPU para lógica, cadencia de disparos, físicas, red. <br>
+          RAM de 4 GB es mínimo; más RAM ayuda si corrés otros programas como OBS al mismo tiempo. <br>
+          Otros: latencia de red, sincronización, client optimizado.  
+        </td>
+        <td>
+          Valorant suele streamarse bien si optimizás un poco: bajar algunos efectos, usar resolución media si hardware no es potente, elegir buen encoder. <br>
+          Para 720p es bastante accesible; para 1080p/60 fps ya depende más de que la GPU y el CPU aguanten la carga extra de codificación + render del juego. <br>
+          Si también querés jugar competitivo, hay que priorizar FPS estables, lo que puede implicar sacrificar calidad gráfica o resolución de transmisión si el hardware está justo.
+        </td>
+      </tr>
+    </table>
+  </section>
+  <footer>
+    <p>Comparativa construida con datos oficiales y públicos de los requisitos de los juegos, además de conocimiento general de cómo funciona el streaming (OBS u otro software), encoders, etc.</p>
+  </footer>
+</body>
+</html>
